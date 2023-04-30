@@ -71,7 +71,7 @@ a.cta p{
     border-radius: .5em;
 }
 
-.box:nth-of-type(1){
+.box:nth-of-type(1){ 
     background-image: url(drum1.png);
     background-size: cover;
 }
