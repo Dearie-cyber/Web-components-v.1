@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3em;
+  padding-top: 11.3em;
+  padding-bottom: 5em;
+  background: white;
+  font-family: 'Poppins', sans-serif;
+  gap: 7em;
+}
+
+
+/* Type */
+
+h1 {
+  font-size: 4.5em;
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  font-size: 1.8em;
+  text-align: center;
+  margin: 2.8rem 0;
+}
+
+/* Button */
+
+button {
+  margin: 0 auto;
+  border: 0;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  background: #6642CD;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 2.9rem 3.6rem;
+}
+
+button svg {
+  display: block;
+  margin-right: 3rem;
+}
+
+/* Person box */
+
+.person-box {
+  background-color: #AFD48A;
+  max-width: 39em;
+  height: 47.4em;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 1.2em;
+}
+
+.person-box img {
+  display: block;
+  width: 43.8em;
+}
+
+/* Tablet, desktop view */
+
+@media (min-width: 800px) {
+  section {
+    align-items: flex-start;
+    margin: 50px 0;
+    flex-direction: row;
+  }
+  .main {
+    height: 47.4em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main h1 {
+    margin: 0;
+  }
+  h1, p {
+    text-align: left;
+  }
+  button {
+    margin: 0;
+  }
+
+  .person-box{
+    flex: 1;
+  }
+
+    
+}
+    </style>
+</head>
+<body>
+    <section>
+        <div class="main">
+          <div>
+            <h1>Stand up to Anxiety.</h1>
+            <p>Use our free app to conquer your bouts of anxiety and depression. With our intelligent AI, you can remain confident you’ll beat it this time.</p>
+          </div>
+          <div>
+            <button>
+              <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.29289 20.7071C7.68342 21.0976 8.31658 21.0976 8.70711 20.7071L15.0711 14.3431C15.4616 13.9526 15.4616 13.3195 15.0711 12.9289C14.6805 12.5384 14.0474 12.5384 13.6569 12.9289L8 18.5858L2.34315 12.9289C1.95262 12.5384 1.31946 12.5384 0.928932 12.9289C0.538407 13.3195 0.538407 13.9526 0.928932 14.3431L7.29289 20.7071ZM7 -4.37114e-08L7 20L9 20L9 4.37114e-08L7 -4.37114e-08Z" fill="white"/></svg>
+              Download AnxietyApp
+            </button>
+          </div>
+        </div>
+        <div>
+          <div class="person-box">
+            <img src="https://i.imgur.com/dXWxQuA.png" alt />
+          </div>
+        </div>
+      </section>
+</body>
+</html>
