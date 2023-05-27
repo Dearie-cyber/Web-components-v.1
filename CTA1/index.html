@@ -4,12 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Section</title>
+    <title>Fitness Blip</title>
     <style>
-        
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            background: #dae0ea;
+            font-family: 'Segoe UI';
+        }
+
+        section{
+            display: flex;
+            width: 1000px;
+            margin: 20em auto;
+            position: relative;
+        }
+
+        section:before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: -50px;
+            width: 150px;
+            height: 150px;
+            background: #c7d0e0;
+            border-radius: .5em;
+            z-index: -1;
+        }
+        .left-col{
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .right-col{
+            flex: 1;
+            display: grid;
+            grid-template-areas:
+            "primary ."
+            "primary .";
+            gap: 2.3rem;
+        }
+        .primary{
+            grid-area: primary;
+        }
+
+        h1{
+            font-size: 4.3rem;
+            margin-top: 1.7em;
+        }
+
+        p{
+            font-size: 2.2rem;
+        }
+
+        a.cta{
+            display: inline-flex;
+            align-self: start;
+            align-items: center;
+            background: #1a63dd;
+            gap: 1em;
+            color: #fff;
+            text-decoration: none;
+            padding: 1.3em;
+            font-weight: bold;
+            border-radius: .25em;
+            font-size: 1.8rem;
+        }
     </style>
 </head>
 <body>
-    
+    <section>
+        <div class="left-col">
+            <div class="top-content">
+                <h1>Fitness made Simple</h1>
+                <p>It's all about calories in, vs calories out. Discover what the experts know.</p>
+            </div>
+            <a href="#" class="cta">
+                <span>Lose fat today</span>
+                <svg width="30" height="8" viewBox="0 0 30 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M29.3536 4.35355C29.5488 4.15829 29.5488 3.84171 29.3536 3.64645L26.1716 0.464466C25.9763 0.269204 25.6597 0.269204 25.4645 0.464466C25.2692 0.659728 25.2692 0.976311 25.4645 1.17157L28.2929 4L25.4645 6.82843C25.2692 7.02369 25.2692 7.34027 25.4645 7.53553C25.6597 7.7308 25.9763 7.7308 26.1716 7.53553L29.3536 4.35355ZM0 4.5H29V3.5H0V4.5Z" fill="white"/>
+                </svg>     
+            </a>
+        </div>
+        <div class="right-col">
+            <img src="./assets/fit1.png" class="primary" alt="Fitness pic">
+            <img src="./assets/fit2.png" alt="Fitness pic">
+            <img src="./assets/fit3.png" alt="Fitness pic">
+        </div>
+    </section>
 </body>
 </html>
