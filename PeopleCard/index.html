@@ -32,6 +32,7 @@
           
           section > .box:nth-child(1) {
             background: #23BDFF;
+            animation: child1 3s infinite;
           }
           
           section > .box:nth-child(1) .person-img {
@@ -41,6 +42,7 @@
           
           section > .box:nth-child(2) {
             background: #FF237F;
+            animation: child2 3s infinite;
           }
           
           section > .box:nth-child(2) .person-img {
@@ -50,6 +52,7 @@
           
           section > .box:nth-child(3) {
             background: #FFF623;
+            animation: child3 3s infinite;
           }
           
           section > .box:nth-child(3) .person-img {
@@ -57,8 +60,22 @@
             margin-left: -4em;
           }
           
+          @keyframes child1 {
+            25% {background: #FFF623;}
+            50% {background: #FF237F}
+          }
           
-          @media (min-width: 727px) {
+          @keyframes child2 {
+            20% {background: #23BDFF;}
+            50% {background: #FFF623}
+          }
+          
+          @keyframes child3 {
+            25% {background: #FF237F;}
+            50% {background: #23BDFF}
+          }
+          
+          @media (min-width: 768px) {
             section {
               justify-content: space-between;
               flex-direction: row;
