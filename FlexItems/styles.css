@@ -1,6 +1,6 @@
-html {
+/* html {
     font-size: 62.5%;
-}
+} */
 
 body{
     margin: 0;
@@ -10,7 +10,17 @@ body{
 .Items{
     background: linear-gradient(to right, #ffffffc7, #feb094);
     display: flex;
-    padding: 7.8em;
+    padding: 3.8em;
     gap: 3.4em;
 }
 
+.features{
+    margin: 0px 5% 0px 5%;
+}
+
+@media (max-width: 768px) {
+    .Items{
+        display: flex;
+        flex-direction: column;
+    }
+}
