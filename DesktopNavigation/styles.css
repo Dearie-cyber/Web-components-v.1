@@ -11,10 +11,12 @@ body{
 header{
     background-color: #dbe1e8;
     padding: 2.5em;
+    position: sticky;
+    top: 0;
 }
 
 .wrapper{
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 

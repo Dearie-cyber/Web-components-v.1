@@ -16,11 +16,12 @@
         }
 
         .gallery{
-            max-width: 1200px;
-            margin: 7em auto;
-            height: 513px;
+            max-width: 100%;
+            margin: 5em 7em 5em 7em;
+            height: 100%;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            gap: 2em;
             grid-template-rows: 40% 1fr;
         }
         .item{
@@ -42,6 +43,17 @@
             background-image: url(./assets/Car5.png);
             grid-column: 2 /4;
         }
+
+        /* @media (max-width: 768px){
+           .gallery{
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: none;
+            }
+            .item:nth-of-type(5){
+                background-image: url(./assets/Car5.png);
+                grid-column: auto;
+            }
+        } */
     </style>
 </head>
 <body>

@@ -42,7 +42,22 @@ button.select-customers, .search-box {
 }
 
 .search-box svg {
-  display: block;
+  display: inline;
+}
+
+input{
+  border: 0px;
+  width: 85%;
+  margin: 0px 10px 0px 0px;
+  padding: 10px;
+  background: #9fbbea;
+  color: #fff;
+}
+
+.btn{
+  background: none;
+  border: 0;
+  cursor: pointer;
 }
 
 /* Waiting text */
